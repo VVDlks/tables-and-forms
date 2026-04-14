@@ -13,8 +13,7 @@
             <select name="petType">
                 <option value="cat">Кошка</option>
                 <option value="dog">Собака</option>
-                <option value="hamster">Хомяк</option>
-                <option value="parrot">Попугай</option>
+                <option value="tiger">Тигр</option>
             </select>
         </label>
 
@@ -37,7 +36,7 @@
         </label>
 
         <label>Имя
-            <input type="text" name="name" value="Саша" required>
+            <input type="text" name="name" value="Саша" minlength="3" maxlength="50" required>
         </label>
 
         <label>Дата рождения
@@ -53,7 +52,7 @@
         </label>
 
         <label>
-            <input type="checkbox" name="rules" value="true" required> Я согласен предоставить свои паспортные данные, и пин код от кредитки.
+            <input type="checkbox" name="rules" value="true" required> Я согласен предоставить свои паспортные данные и пин код от кредитки.
         </label>
 
         <button type="submit">
