@@ -7,9 +7,44 @@
 </head>
 <body>
 <main>
+    petType
+    gender
+    eyeColor
+    tailLength
+    name
+    dateOfBirth
+    email
+    phone
+    rules
     <h1>Найди себе друга!</h1>
+    <form action="/pets/orders" method="post">
+        <label>
+            <select name="petType">
+                <option value="cat">Кошка</option>
+                <option value="dog">Собака</option>
+                <option value="hamster">Хомяк</option>
+                <option value="parrot">Попугай</option>
+            </select>
+        </label>
 
-    <!--Форму размещай тут-->
+        <label>
+            <input type="radio" name="gender"> Девочка
+        </label>
+        <label>
+            <input type="radio" name="gender"> Мальчик
+        </label>
+        <label>
+            <input type="radio" name="gender" checked> Не имеет значения
+        </label>
+
+        <label>
+            <input type="color" name="eyeColor" value="#575757">
+        </label>
+
+        <button type="submit">
+            Отправить форму
+        </button>
+    </form>
 
 </main>
 </body>
